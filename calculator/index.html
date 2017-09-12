@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+</head>
+<body>
+
+<input id="number-a" type="number">
+<br/>
+<input id="number-b" type="number">
+<br/>
+<button id="calculate-btn" onclick="calculate()">Calculate Sum</button>
+<br/>
+<h1 id="answer">Your answer will go here.</h1>
+
+<script type="text/javascript">
+
+	function calculate(){
+
+		var numberA = parseInt(document.getElementById("number-a").value);
+		var numberB = parseInt(document.getElementById("number-b").value);
+		var sum = numberA + numberB;
+		document.getElementById("answer").innerHTML = sum;
+	}
+
+</script>
+</body>
+</html>
